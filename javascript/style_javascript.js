@@ -35,15 +35,12 @@ $(document).ready(function() {
 
 
 $(window).ready(function() {
-       var overlay = document.querySelector('.overlay');
     $('.form-support').hide();
     $('#hotro').click(function() {
         $('.form-support').slideDown(500);
-        overlay.classList.add('ds-block');
     })
     $('#knot').click(function() {
         $('.form-support').hide();
-        overlay.classList.remove('ds-block');
     })
 })
 
