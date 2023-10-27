@@ -1,0 +1,43 @@
+@import "style.css";
+
+/* SECTION */
+
+.main {
+    width: 80%;
+    margin: 10px auto;
+    background-color: #f2f2f2;
+    padding: 10px;
+}
+
+.main a {
+    color: #1a75ff;
+    text-decoration: none;
+}
+
+.main p {
+    padding: 10px;
+    text-align: justify;
+}
+
+.list {
+    list-style-type: none;
+}
+
+.list h3 {
+    padding-left: 10px;
+    color: #ffa500;
+}
+
+ul.list-child {
+    list-style-type: disc;
+}
+
+ul.list-child,
+ol.list-child {
+    padding-left: 50px;
+}
+
+h3.thank {
+    text-align: center;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
