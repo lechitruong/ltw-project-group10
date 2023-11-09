@@ -1,0 +1,108 @@
+@import "./style.css";
+.product__detail, .product__feedback{
+    width: 1080px;
+    margin: 20px auto;
+    background-color: white; /* Màu nền của giao diện */
+}
+.product__detail .product-container{
+    position: relative;
+}
+.product__detail .grid-2{
+    margin-right: 20px;
+}
+.product__detail .home-product-item__sale-off{
+    position: absolute;
+    top: 0;
+    left:0px;
+}
+.product__category span{
+    display: inline-block;
+    border: 1px solid #e5e5e5;
+    padding: 3px 10px;
+    border-radius: 4px;
+    margin: 8px 0;
+}
+.product-information{
+    width: 100%;
+}
+/* danh gia */
+.product__feedback{
+    width: 1080px;
+    margin: 20px auto;
+}
+.review-section {
+    text-align: center;
+}
+
+.rating {
+    color: #FFD700;
+    font-size: 24px;
+}
+
+.review {
+    font-style: italic;
+    color: #555;
+}
+.reviewForm{
+    width: 1000px;
+    margin: 20px 0 20px 30px ;
+}
+.reviewForm label {
+    display: block;
+    margin-bottom: 10px;
+}
+
+.reviewForm textarea {
+    width: 100%;
+    padding: 10px;
+    margin-left: 0;
+    margin-bottom: 10px;
+    border: 1px solid #888;
+}
+
+.reviewForm button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px;
+    border-radius: 4px;
+    cursor: pointer;
+    border-color: #333;
+}
+
+.reviewForm button:hover {
+    background-color: #45a049;
+}
+.comment-list {
+    width: 1020px;
+    margin: 20px 0 20px 30px ;
+    border: 1px solid #333;
+    max-height: 300px; 
+    overflow-y: auto; 
+}
+.comment {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+.comment-info {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 5px;
+}
+.comment-info img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-right: 10px;
+    object-fit: cover;
+}
+
+.comment-info h3,
+.comment-info .timestamp {
+    margin: 0;
+}
+
+.comment-text {
+    margin-top: 5px;
+}

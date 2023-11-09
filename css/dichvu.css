@@ -1,0 +1,57 @@
+@import "style.css";
+
+/* SECTION */
+
+.main {
+    width: 80%;
+    margin: 0 auto;
+    padding: 10px;
+}
+
+.main a {
+    color: #ffa500;
+    text-decoration: none;
+}
+
+.service {
+    margin: 2px;
+    background-color: #f2f2f2;
+}
+
+.list-service h3 {
+    padding: 20px 0 20px 0;
+    color: #ffa500
+}
+
+ul.list-service {
+    list-style-type: none;
+    padding: 10px;
+}
+.list-service p{
+    padding: 10px 0;
+}
+
+ul.info-service {
+    list-style-type: disc;
+}
+
+ul.info-service>li {
+    padding: 5px 20px;
+    list-style-position: inside;
+}
+.info-service-list{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 10px;
+}
+.info-service-item{
+   width: 30%;
+}
+.info-service-item img{
+    width: 100%;
+    height: 300px;
+}
+.info-service-item h5{
+    text-align: center;
+    margin: 10px auto;
+}
