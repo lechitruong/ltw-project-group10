@@ -1,0 +1,856 @@
+<!doctype html>
+<html class="no-js" lang="en">
+
+<!-- checkout31:27-->
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thanh toán</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Bootstrap V4.1.3 Fremwork CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="stylesheet" href="./css/shoppingcart_checkout.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="css/dichvu.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+        integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+    <link href="image/icon/icon-logo.PNG" rel="shortcut icon" />
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+
+<body>
+    <nav id="nav_menu">
+        <ul class="menu">
+            <li>
+                <a href="index.html">
+                    <img src="image/icon/home-icon.png" alt="trang chủ">
+                    <span>TRANG CHỦ</span>
+                </a>
+            </li>
+            <li>
+                <a href="giongcho.html">
+                    <img src="image/icon/giongcho-icon.png" alt="giống chó">
+                    <span>GIỐNG CHÓ</span>
+
+                </a>
+                <ul class="sub-menu">
+                    <li>
+                        <ul class="menu-list">
+                            <li> <a href="">Akita Inu</a></li>
+                            <li><a href="">Alabai</a></li>
+                            <li><a href="">Alaska</a></li>
+                            <li><a href="">Alaska Giant</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <ul class="menu-list">
+                            <li><a href="">Basset Hound</a></li>
+                            <li><a href="">Bắc Hà</a></li>
+                            <li><a href="">Bắc Kinh</a></li>
+                            <li><a href="">Beagle</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <ul class="menu-list">
+
+                            <li><a href="">Becgie Bỉ</a></li>
+                            <li><a href="">Becgie Đức</a></li>
+                            <li><a href="">Becgie Hà Lan</a></li>
+                            <li> <a href="">Becgie Pháp</a> </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <ul class="menu-list">
+                            <li><a href="">Bichon Frise</a></li>
+                            <li><a href="">Border Collie</a></li>
+                            <li><a href="">Boston</a></li>
+                            <li><a href="">Bull Pháp</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <ul class="menu-list">
+                            <li><a href="">Bulldog</a></li>
+                            <li><a href="">Bully American</a></li>
+                            <li><a href="">Caucasian</a></li>
+                            <li><a href="">Chihuahua</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <ul class="menu-list">
+                            <li><a href="">Chó Ai Cập</a></li>
+                            <li><a href="">Chó Bướm</a></li>
+                            <li><a href="">Chó Đốm</a></li>
+                            <li><a href="">Chó Lai Sói</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <ul class="menu-list">
+                            <li><a href="">Chó Nhật</a></li>
+                            <li><a href="">Chó Sục Bò</a></li>
+                            <li><a href="">Chó Tam Sắc</a></li>
+                            <li><a href="">Chó Võ Sĩ</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <ul class="menu-list">
+                            <li><a href="">Chó Xoáy Thái</a></li>
+                            <li><a href="">Chow Chow</a></li>
+                            <li><a href="">Great Dane</a></li>
+                            <li><a href="">H’Mông Cộc</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <ul class="menu-list">
+                            <li><a href="">Husky</a></li>
+                            <li><a href="">Labrador</a></li>
+                            <li><a href="">Lạp Xưởng</a></li>
+                            <li><a href="">Ngao Tây Tạng</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <ul class="menu-list">
+                            <li><a href="">Phốc Hươu</a></li>
+                            <li><a href="">Phốc Sóc</a></li>
+                            <li><a href="">Phú Quốc</a></li>
+                            <li><a href="">Pitbull</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <ul class="menu-list">
+                            <li><a href="">Poodle</a></li>
+                            <li><a href="">Rottweiler</a></li>
+                            <li><a href="">Pug</a></li>
+                            <li><a href="">Samoyed</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <ul class="menu-list">
+                            <li><a href="">Shiba Inu</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <a href="./loaikhac.html">
+                    <img src="image/icon/cuncon-icon.png" alt="cún con">
+                    <span>LOÀI KHÁC</span>
+                </a>
+                <ul class="sub-menu">
+                    <li>
+                        <ul class="menu-list">
+                            <li>
+                                <a href="#">Ikita Inu</a>
+                            </li>
+                            <li>
+                                <a href="#">Alaska</a>
+                            </li>
+                            <li>
+                                <a href="#">Bắc Hà</a>
+                            </li>
+                            <li>
+                                <a href="#">Bắc Kinh</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <ul class="menu-list">
+                            <li>
+                                <a href="#">Becgie Đức</a>
+                            </li>
+                            <li>
+                                <a href="#">Border collie</a>
+                            </li>
+                            <li>
+                                <a href="#">Bulldog</a>
+                            </li>
+                            <li>
+                                <a href="#">Bully American</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <ul class="menu-list">
+                            <li>
+                                <a href="#">Chihuahua</a>
+                            </li>
+                            <li>
+                                <a href="#">Chó Đốm</a>
+                            </li>
+                            <li>
+                                <a href="#">Chó Nhật</a>
+                            </li>
+                            <li>
+                                <a href="#">Chow Chow</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <ul class="menu-list">
+                            <li>
+                                <a href="#">Cocker Spaniel</a>
+                            </li>
+                            <li>
+                                <a href="#">Corgi</a>
+                            </li>
+                            <li>
+                                <a href="#">Dobermann</a>
+                            </li>
+                            <li>
+                                <a href="#">Golden Retriever</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <ul class="menu-list">
+                            <li>
+                                <a href="#">Great Dane</a>
+                            </li>
+                            <li>
+                                <a href="#">H'Mông Cộc</a>
+                            </li>
+                            <li>
+                                <a href="#">Husky</a>
+                            </li>
+                            <li>
+                                <a href="#">Labrador</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <ul class="menu-list">
+                            <li>
+                                <a href="#">Lạp Xưởng</a>
+                            </li>
+                            <li>
+                                <a href="#">Malinois</a>
+                            </li>
+                            <li>
+                                <a href="#">Ngao Tây Tạng</a>
+                            </li>
+                            <li>
+                                <a href="#">Phốc Hươu</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <ul class="menu-list">
+                            <li>
+                                <a href="#">Phốc Sóc</a>
+                            </li>
+                            <li>
+                                <a href="#">Phú Quốc</a>
+                            </li>
+                            <li>
+                                <a href="#">Pitbull</a>
+                            </li>
+                            <li>
+                                <a href="#">Poodle</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <ul class="menu-list">
+                            <li>
+                                <a href="#">Pug</a>
+                            </li>
+                            <li>
+                                <a href="#">Rottweiler</a>
+                            </li>
+                            <li>
+                                <a href="#">Samoyed</a>
+                            </li>
+                            <li>
+                                <a href="#">Shiba Inu</a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <a href="phukien.html">
+                    <img src="image/icon/phukien-icon.png" alt="phụ kiện">
+                    <span>PHỤ KIỆN</span>
+                </a>
+                <ul class="sub-menu">
+                    <li>
+                        <ul class="menu-list">
+                            <li><a href="#">Đồ Dùng Thú Cưng</a></li>
+                            <li><a href="#">Thức Ăn Thú Cưng</a></li>
+                            <li><a href="#">Chuồng Lồng Thú Cưng</a></li>
+                            <li><a href="#">Đồ Chơi Thú Cưng</a></li>
+
+                        </ul>
+                    </li>
+                    <li>
+                        <ul class="menu-list">
+                            <li><a href="#">Phụ Kiện Làm Đẹp</a></li>
+                            <li><a href="#">Quần Áo Thú Cưng</a></li>
+                            <li><a href="#">Thực Phẩm Dinh Dưỡng</a></li>
+                            <li><a href="#">Thuốc & Sản Phẩm Chức Năng</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <a href="cachnuoi.html">
+                    <img src="image/icon/cachnuoi-icon.png" alt="cách nuôi">
+                    <span>CÁCH NUÔI</span>
+                </a>
+            </li>
+            <li>
+                <a href="dichvu.html">
+                    <img src="image/icon/dichvu-icon.png" alt="dịch vụ">
+                    <span>DỊCH VỤ</span>
+                </a>
+            </li>
+            <li>
+                <a href="gioithieu.html">
+                    <img src="image/icon/gioithieu-icon.png" alt="giới thiệu">
+                    <span>GIỚI THIỆU</span>
+                </a>
+            </li>
+            <li>
+                <a href="lienhe.html">
+                    <img src="image/icon/lienhe-icon.png" alt="liên hệ">
+                    <span>LIÊN HỆ</span>
+                </a>
+            </li>
+        </ul>
+    </nav>
+
+    <div class="checkout-area pt-60 pb-30">
+        <div class="container">
+            <div class="row">
+
+            </div>
+            <div class="row">
+                <div class="col-lg-6 col-12">
+                    <form action="#">
+                        <div class="checkbox-form">
+                            <h3>CHI TIẾT THANH TOÁN</h3>
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="checkout-form-list">
+                                        <label>
+                                            <Hgroup></Hgroup>Họ <span class="required">*</span>
+                                        </label>
+                                        <input placeholder="" type="text">
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="checkout-form-list">
+                                        <label>Tên <span class="required">*</span></label>
+                                        <input placeholder="" type="text">
+                                    </div>
+                                </div>
+                                <div class="container">
+                                    <form action="">
+                                        <select name="" id="province">
+                                        </select>
+                                        <select name="" id="district">
+                                            <option value="">chọn quận</option>
+                                        </select>
+                                        <select name="" id="ward">
+                                            <option value="">chọn phường</option>
+                                        </select>
+                                    </form>
+                                    <h2 id="result"></h2>
+                                </div>
+
+                                <style>
+                                    h3 {
+    color: #3498db; /* Màu chữ */
+    text-align: center; /* Căn giữa văn bản */
+    border-bottom: 2px solid #3498db; /* Đường line dưới */
+    padding-bottom: 10px; /* Khoảng cách giữa đường line và nội dung */
+    margin-bottom: 20px; /* Khoảng cách với các phần tử khác */
+}
+                                    .container {
+                                        max-width: 900px;
+                                        margin: 0 auto;
+                                        padding: 20px;
+                                        text-align: center;
+                                    }
+
+                                    form {
+                                        margin-bottom: 100px;
+                                    }
+
+                                    select {
+                                        padding: 10px;
+                                        margin: 3px;
+                                        width: 100%;
+                                        box-sizing: border-box;
+                                    }
+
+                                    #result {
+                                        font-size: 18px;
+                                        color: #333;
+                                    }
+
+                                    /* General Styles */
+                                    .checkout-form-list {
+                                        margin-bottom: 20px;
+                                    }
+
+                                    .checkout-form-list label {
+                                        display: block;
+                                        font-weight: bold;
+                                        margin-bottom: 8px;
+                                    }
+
+                                    .checkout-form-list input,
+                                    .checkout-form-list select,
+                                    .checkout-form-list textarea {
+                                        width: 100%;
+                                        padding: 10px;
+                                        border: 1px solid #ccc;
+                                        border-radius: 5px;
+                                    }
+
+                                    /* Different Address Section */
+                                    .different-address {
+                                        margin-top: 30px;
+                                    }
+
+                                    #ship-box-info {
+                                        display: none;
+                                        /* Hide the different address section initially */
+                                    }
+
+                                    /* Buttons and Additional Styles */
+                                    .checkout-button {
+                                        background-color: #e74c3c;
+                                        color: white;
+                                        padding: 15px 30px;
+                                        border: none;
+                                        border-radius: 5px;
+                                        cursor: pointer;
+                                        font-size: 18px;
+                                        transition: background-color 0.3s ease;
+                                    }
+
+                                    .checkout-button:hover {
+                                        background-color: #c0392b;
+                                    }
+
+                                    /* Responsive Styles */
+                                    @media screen and (max-width: 768px) {
+                                        .row {
+                                            flex-direction: column;
+                                        }
+
+                                        .checkout-form-list {
+                                            width: 100%;
+                                        }
+                                    }
+                                </style>
+
+
+
+                                
+
+                                <div class="col-md-6">
+                                    <div class="checkout-form-list">
+                                        <label>Địa chỉ email <span class="required">*</span></label>
+                                        <input placeholder="" type="email">
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="checkout-form-list">
+                                        <label>Số Điện Thoại <span class="required">*</span></label>
+                                        <input type="text">
+                                    </div>
+                                </div>
+                                <div class="col-md-12">
+                                    <div id="cbox-info" class="checkout-form-list create-account">
+                                        <p>Tạo một tài khoản bằng cách nhập thông tin dưới đây. Nếu bạn là khách hàng
+                                            cũ, vui lòng đăng nhập ở đầu trang.</p>
+                                        <label>Mật Khẩu <span class="required">*</span></label>
+                                        <input placeholder="password" type="password">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="different-address">
+                                <div id="ship-box-info" class="row">
+                                    <div class="col-md-12">
+                                    </div>
+                                    <div class="col-md-12">
+                                        <div class="checkout-form-list">
+                                            <label>Họ <span class="required">*</span></label>
+                                            <input placeholder="" type="text">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-12">
+                                        <div class="checkout-form-list">
+                                            <label>Tên <span class="required">*</span></label>
+                                            <input placeholder="" type="text">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-12">
+                                        <div class="checkout-form-list">
+                                            <label>Tên Cong Ty</label>
+                                            <input placeholder="" type="text">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-12">
+                                        <div class="checkout-form-list">
+                                            <label>Địa Chỉ <span class="required">*</span></label>
+                                            <input placeholder="Street address" type="text">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-12">
+                                        <div class="checkout-form-list">
+                                            <input placeholder="Apartment, suite, unit etc. (optional)" type="text">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-12">
+                                        <div class="checkout-form-list">
+                                            <label>Đất nước <span class="required">*</span></label>
+                                            <input placeholder="" type="text">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-12">
+                                        <div class="checkout-form-list">
+                                            <label>Địa Chỉ Email <span class="required">*</span></label>
+                                            <input placeholder="" type="email">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-12">
+                                        <div class="checkout-form-list">
+                                            <label>Số Điện thoại <span class="required">*</span></label>
+                                            <input type="text">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="order-notes">
+                                    <div class="checkout-form-list">
+                                        <label>Ghi chú khác</label>
+                                        <textarea id="checkout-mess" cols="30" rows="10"
+                                            placeholder="Điền các thông tin cần ghi chú vào đây"></textarea>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+
+
+                <style>
+                    body {
+                        font-family: Arial, sans-serif;
+                        background-color: #f4f4f4;
+                        margin: 0;
+                        padding: 0;
+                    }
+
+                    .order-form {
+                        width: 50%;
+                        margin: 50px auto;
+                        background-color: #fff;
+                        padding: 20px;
+                        border-radius: 10px;
+                        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+                    }
+
+                    h3 {
+                        text-align: center;
+                    }
+
+                    .product-row {
+                        display: flex;
+                        justify-content: space-between;
+                        align-items: center;
+                        margin-bottom: 10px;
+                    }
+
+                    .quantity {
+                        width: 40px;
+                        text-align: center;
+                    }
+
+                    .total {
+                        font-weight: bold;
+                    }
+
+                    .discount-code {
+                        margin-top: 10px;
+                        display: flex;
+                        justify-content: space-between;
+                        align-items: center;
+                    }
+
+                    .payment-options {
+                        margin-top: 20px;
+                    }
+
+                    .checkout-button {
+                        background-color: red;
+                        padding: 10px;
+                        cursor: pointer;
+                        color: white;
+                        border: none;
+                        border-radius: 5px;
+                    }
+
+                    @media (max-width: 768px) {
+                        .order-form {
+                            width: 80%;
+                        }
+                    }
+
+                    .payment-options {
+                        margin-top: 20px;
+                        text-align: center;
+                    }
+
+                    .payment-options button {
+                        background-color: #4CAF50;
+                        color: white;
+                        padding: 10px 10px;
+                        margin: 10px 10px;
+                        border: none;
+                        border-radius: 20px;
+                        cursor: pointer;
+                        font-size: 16px;
+                    }
+
+                    .payment-options button:hover {
+                        background-color: #45a049;
+                    }
+
+                    .discount-code {
+                        margin-top: 20px;
+                        text-align: center;
+                    }
+
+                    .discount-code input {
+                        padding: 10px;
+                        width: 200px;
+                        border: 1px solid #ccc;
+                        border-radius: 5px;
+                        margin-right: 10px;
+                    }
+
+                    .discount-code button {
+                        background-color: #3498db;
+                        color: white;
+                        padding: 10px 20px;
+                        border: none;
+                        border-radius: 5px;
+                        cursor: pointer;
+                    }
+
+                    .discount-code button:hover {
+                        background-color: #2980b9;
+                    }
+
+                    .checkout-button {
+                        background-color: #e74c3c;
+                        color: white;
+                        padding: 15px 30px;
+                        border: none;
+                        border-radius: 5px;
+                        cursor: pointer;
+                        font-size: 18px;
+                        transition: background-color 0.3s ease;
+                    }
+
+                    .checkout-button:hover {
+                        background-color: #c0392b;
+                    }
+
+                </style>
+                </head>
+
+                <body>
+
+                    <div class="order-form">
+                        <h3>Đơn đặt hàng của bạn</h3>
+
+                        <div class="product-row">
+                            <img height="50px" width="50px" src="/image/anhhotro/3-chu-cho.jpg" alt="">
+                            <span> Gold</span>
+                            <div>
+                                <input type="text" class="quantity" id="quantity-gold" value="1" readonly>
+                            </div>
+                            <span class="total" id="total-gold">100,000đ</span>
+                        </div>
+
+                        <div class="product-row">
+                            <img height="50px" width="50px" src="/image/cuncon/cuncon-alaskamummim.jpg" alt="">
+                            <span> Husky</span>
+                            <div>
+                                <input type="text" class="quantity" id="quantity-husky" value="1" readonly>
+                            </div>
+                            <span class="total" id="total-husky">100,000đ</span>
+                        </div>
+
+                        <div class="discount-code">
+                            <input type="text" placeholder="Nhập mã giảm giá" id="discount-code">
+                            <button onclick="applyDiscountCode()">Áp dụng mã</button>
+                        </div>
+
+                        <div>
+                            <p class="total">Tổng số đơn hàng: <span id="total-order">200,000đ</span></p>
+                        </div>
+
+                        <div class="payment-options">
+                            <button onclick="payOnDelivery()">Thanh toán khi nhận hàng</button>
+                            <button onclick="payOnline()">Thanh toán online</button>
+                        </div>
+
+                        <div class="payment-details" id="payment-details"></div>
+
+                        <div class="checkout-button" onclick="checkOutOrder()">Đặt hàng</div>
+                    </div>
+
+                    <script>
+                        var productPrices = {
+                            gold: 100000,
+                            husky: 100000
+                        };
+
+                        var quantities = {
+                            gold: 1,
+                            husky: 1
+                        };
+
+                        function updateTotal(product) {
+                            var quantity = quantities[product];
+                            var total = quantity * productPrices[product];
+                            document.getElementById('total-' + product).textContent = total.toLocaleString('vi-VN') + 'đ';
+                            updateTotalOrder();
+                        }
+
+                        function increaseQuantity(product) {
+                            quantities[product]++;
+                            document.getElementById('quantity-' + product).value = quantities[product];
+                            updateTotal(product);
+                        }
+
+                        function decreaseQuantity(product) {
+                            if (quantities[product] > 1) {
+                                quantities[product]--;
+                                document.getElementById('quantity-' + product).value = quantities[product];
+                                updateTotal(product);
+                            }
+                        }
+
+                        function applyDiscountCode() {
+    var discountCode = document.getElementById('discount-code').value;
+    if (discountCode === "HIHI") {
+        var totalOrderElement = document.getElementById('total-order');
+        var totalOrderText = totalOrderElement.textContent.trim();
+        var totalOrder = parseFloat(totalOrderText.replace(/[^\d.-]/g, '')); // Remove non-numeric characters
+
+        // Apply the discount
+        totalOrder -= 5000;
+
+        // Ensure the correct format for displaying the total order amount
+        totalOrderElement.textContent = totalOrder.toLocaleString('vi-VN') + 'đ';
+        
+        alert("Mã giảm giá đã được áp dụng!");
+    } else {
+        alert("Mã giảm giá không hợp lệ.");
+    }
+}
+
+var totalOrder = 0; // Declare totalOrder as a global variable
+
+function updateTotalOrder() {
+    var totalGold = quantities['gold'] * productPrices['gold'];
+    var totalHusky = quantities['husky'] * productPrices['husky'];
+    totalOrder = totalGold + totalHusky;
+
+    // Display the total order with the correct format
+    document.getElementById('total-order').textContent = totalOrder.toLocaleString('vi-VN') + 'đ';
+}
+
+
+                        function payOnDelivery() {
+                            document.getElementById('payment-details').innerHTML =
+                                '<p>Vui lòng cọc 100.000đ vào tài khoản:</p>' +
+                                '<p>Số tài khoản: 40366084837 VP Bank</p>' +
+                                '<p>Chủ tài khoản: Tran Thanh Tri</p>';
+                        }
+
+                        function payOnline() {
+                            var totalOrderElement = document.getElementById('total-order');
+                            var totalOrder = parseFloat(totalOrderElement.textContent.replace('.000đ', '').replace(',', ''));
+                            document.getElementById('payment-details').innerHTML =
+                                '<p>Vui lòng thanh toán số tiền ' + totalOrder.toLocaleString('vi-VN') + 'đ vào tài khoản:</p>' +
+                                '<p>Số tài khoản: 40366084837 VP Bank</p>' +
+                                '<p>Chủ tài khoản: Tran Thanh Tri</p>';
+                        }
+
+                        function checkOutOrder() {
+                        }
+                    </script>
+
+            </div>
+        </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.21.1/axios.min.js"></script>
+                                <script>
+                                    var citis = document.getElementById("city");
+                                    var districts = document.getElementById("district");
+                                    var wards = document.getElementById("ward");
+                                    var Parameter = {
+                                        url: "https://raw.githubusercontent.com/kenzouno1/DiaGioiHanhChinhVN/master/data.json",
+                                        method: "GET",
+                                        responseType: "application/json",
+                                    };
+                                    var promise = axios(Parameter);
+                                    promise.then(function (result) {
+                                        renderCity(result.data);
+                                    });
+
+                                    function renderCity(data) {
+                                        for (const x of data) {
+                                            citis.options[citis.options.length] = new Option(x.Name, x.Id);
+                                        }
+                                        citis.onchange = function () {
+                                            district.length = 1;
+                                            ward.length = 1;
+                                            if (this.value != "") {
+                                                const result = data.filter(n => n.Id === this.value);
+
+                                                for (const k of result[0].Districts) {
+                                                    district.options[district.options.length] = new Option(k.Name, k.Id);
+                                                }
+                                            }
+                                        };
+                                        district.onchange = function () {
+                                            ward.length = 1;
+                                            const dataCity = data.filter((n) => n.Id === citis.value);
+                                            if (this.value != "") {
+                                                const dataWards = dataCity[0].Districts.filter(n => n.Id === this.value)[0].Wards;
+
+                                                for (const w of dataWards) {
+                                                    wards.options[wards.options.length] = new Option(w.Name, w.Id);
+                                                }
+                                            }
+                                        };
+                                    }
+                                </script>
+    <script src="./javascript/style_javascript.js"></script>
+    <script src="./javascript/checkout.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+        integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.26.1/axios.min.js"
+        integrity="sha512-bPh3uwgU5qEMipS/VOmRqynnMXGGSRv+72H/N260MQeXZIK4PG48401Bsby9Nq5P5fz7hy5UGNmC/W1Z51h2GQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+</body>
+
+</html>

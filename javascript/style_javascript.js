@@ -32,20 +32,23 @@ $(document).ready(function() {
         }
     })
 })
-
+// tao hieu ung truot 
+document.addEventListener("scroll", function () {
+    let sections = document.querySelectorAll(".section");
+    
+    sections.forEach(function (section) {
+      let boundingBox = section.getBoundingClientRect();
+      
+      // Kiểm tra nếu phần tử hiện tại đang nằm trong tầm nhìn
+      if (boundingBox.top <= window.innerHeight * 0.75 && boundingBox.bottom >= window.innerHeight * 0.25) {
+        section.style.transform = "scale(1.1)";
+      } else {
+        section.style.transform = "scale(1)";
+      }
+    });
+  });
 
 $(window).ready(function() {
-<<<<<<< HEAD
-       var overlay = document.querySelector('.overlay');
-    $('.form-support').hide();
-    $('#hotro').click(function() {
-        $('.form-support').slideDown(500);
-        overlay.classList.add('ds-block');
-    })
-    $('#knot').click(function() {
-        $('.form-support').hide();
-        overlay.classList.remove('ds-block');
-=======
     $('#hotro').click(function() {
         $('.form-support').slideDown(500);
         $('.form-support').style.display = 'block';
@@ -54,7 +57,6 @@ $(window).ready(function() {
     $('#knot').click(function() {
         $('.form-support').hide();
         $('.overlay').style.display = 'none';
->>>>>>> 8637778 (init project)
     })
 })
 
@@ -69,24 +71,21 @@ document.addEventListener('DOMContentLoaded', function() {
         element.addEventListener('click', function() {
             overlay.classList.add('ds-block');
             product.style.display= 'block';
-            const imageSrc = infoProduct.querySelector('img').src;
-            const productName = infoProduct.querySelector('h6').textContent;
-            const productPrice = infoProduct.querySelector('.info-dog--money').textContent;
+            // const imageSrc = infoProduct.querySelector('img').src;
+            // const productName = infoProduct.querySelector('h6').textContent;
+            // const productPrice = infoProduct.querySelector('.info-dog--money').textContent;
       
             // Hiển thị thông tin
-            product.querySelector('.product-container img').src = imageSrc;
-            product.querySelector('.product-information h2').textContent = productName;
-            product.querySelector('.product-information .product__money--new').textContent = productPrice;
+            // product.querySelector('.product-container img').src = imageSrc;
+            // product.querySelector('.product-information h2').textContent = productName;
+            // product.querySelector('.product-information .product__money--new').textContent = productPrice;
         });
-    })
-    
+    });
     // Dong giao dien san pham
     close.addEventListener('click', function(){
         overlay.classList.remove('ds-block');
         product.style.display= 'none';
     });
-<<<<<<< HEAD
-=======
     // su kien doi mat khau
    const changePasswordButton = document.querySelector('.change_password');
    const passNotify = document.querySelector('.pass-notify');
@@ -102,11 +101,8 @@ document.addEventListener('DOMContentLoaded', function() {
  
    // Sự kiện click nút "Đăng nhập" trên thông báo
    loginButton.addEventListener('click', function() {
-     // Chuyển đến màn hình đăng nhập
      location.href = './login.html';
    });
-
->>>>>>> 8637778 (init project)
 });
 // Phương thức giảm số lượng
 function decreaseQuantity() {
@@ -123,10 +119,6 @@ function increaseQuantity() {
     var currentQuantity = parseInt(quanlityProduct.value);
     quanlityProduct.value = currentQuantity + 1;
 }
-<<<<<<< HEAD
-
-
-=======
 // xoa san pham
 function deleteProduct(button) {
     const product = button.closest('.header__cart-product-sp');
@@ -174,89 +166,79 @@ function deleteProduct(button) {
         updateVisibleItems();
     });
 });
-
 function addComment() {
-    var newCommentText = document.getElementById("userReview").value;
-    var newComment = createCommentElement("user1.jpg", "User 1", getCurrentTime(), newCommentText);
-    document.getElementById("comment-list").appendChild(newComment);
-    document.getElementById("userReview").value = "";
-    var commentList = document.getElementById("comment-list");
-    commentList.scrollTop = commentList.scrollHeight;
-}
-function createCommentElement(imageSrc, name, time, text) {
-    // Function to create a new comment element
-    var comment = document.createElement("div");
-    comment.className = "comment";
+    var userName = "Your Name"; // Thay bằng cách lấy tên đăng nhập hoặc tên người dùng thực tế
+    var userReview = document.getElementById("userReview").value;
+    var selectedStar = document.getElementById("selectedStar").value;
 
-    // Add the comment info (avatar, name, timestamp)
+    // Kiểm tra xem đã chọn số sao chưa
+    if (selectedStar === "0") {
+        alert("Vui lòng chọn số sao trước khi gửi đánh giá.");
+        return;
+    }
+
+    // Tạo một đối tượng bình luận mới
+    var newComment = document.createElement("div");
+    newComment.className = "comment";
+
     var commentInfo = document.createElement("div");
     commentInfo.className = "comment-info";
 
-    var userDetails = document.createElement("div");
-    userDetails.className = "user-details";
-    userDetails.innerHTML = "<img src='" + imageSrc + "' alt='" + name + "'>" +
-                            "<h3>" + name + "</h3>" +
-                            "<p class='timestamp'>" + time + "</p>";
-    commentInfo.appendChild(userDetails);
-    comment.appendChild(commentInfo);
+    var userNameElement = document.createElement("h3");
+    userNameElement.appendChild(document.createTextNode(userName));
+    commentInfo.appendChild(userNameElement);
+
+    var rating = document.createElement("div");
+    rating.className = "rating";
+
+    // Thêm số sao vào đánh giá
+    for (var i = 0; i < selectedStar; i++) {
+        var star = document.createElement("span");
+        star.innerHTML = "&#9733;";
+        rating.appendChild(star);
+    }
+
+    commentInfo.appendChild(rating);
+
     var commentText = document.createElement("p");
     commentText.className = "comment-text";
-    commentText.innerText = text;
-    comment.appendChild(commentText);
-    return comment;
+    commentText.appendChild(document.createTextNode(userReview));
+
+    // Thêm bình luận mới vào danh sách
+    newComment.appendChild(commentInfo);
+    newComment.appendChild(commentText);
+
+    var commentList = document.getElementById("comment-list");
+    commentList.appendChild(newComment);
+
+    var replyButton = document.createElement("button");
+    replyButton.appendChild(document.createTextNode("Trả lời"));
+    replyButton.onclick = function () {
+        alert("Chức năng trả lời sẽ được thêm ở đây.");
+    };
+
+    // Thêm nút "Trả lời" vào bình luận mới
+    newComment.appendChild(replyButton);
+
+    // Xóa nội dung trong ô đánh giá sau khi gửi
+    document.getElementById("userReview").value = "";
+
+    // Reset số sao về 0
+    document.getElementById("selectedStar").value = "0";
 }
+function handleStarClick(starValue) {
+    // Cập nhật giá trị số sao đã chọn
+    document.getElementById("selectedStar").value = 6 - starValue;
 
-function getCurrentTime() {
-    var now = new Date();
-    var hours = now.getHours();
-    var minutes = now.getMinutes();
-    return hours + ":" + (minutes < 10 ? "0" : "") + minutes;
+    // Cập nhật hiển thị số sao trên dòng "Đánh giá và nhận xét từ người dùng"
+    var reviewText = document.getElementById("reviewText");
+    reviewText.innerHTML = "Đánh giá và nhận xét từ người dùng: " + "&#9733;".repeat( 6- starValue);
 }
-// js tao nut bam cho tung trang
-var currentPage = 1;
-var productsPerPage = 20; // Số lượng sản phẩm trên mỗi trang
-var productList = document.getElementById('product-container').children;
-
-function showPage(page) {
-    var startIndex = (page - 1) * productsPerPage;
-    var endIndex = startIndex + productsPerPage - 1;
-
-    for (var i = 0; i < productList.length; i++) {
-        if (i >= startIndex && i <= endIndex) {
-            productList[i].style.display = 'block';
-        } else {
-            productList[i].style.display = 'none';
-        }
-    }
-
-    updatePagination();
-}
-
-function updatePagination() {
-    var totalPages = Math.ceil(productList.length / productsPerPage);
-    var paginationContainer = document.getElementById('pagination-buttons');
-    paginationContainer.innerHTML = '';
-
-    for (var i = 1; i <= totalPages; i++) {
-        var pageButton = document.createElement('li');
-        pageButton.innerHTML = i;
-        pageButton.setAttribute('onclick', 'changePage(' + i + ')');
-
-        if (i === currentPage) {
-            pageButton.classList.add('is_active');
-        }
-
-        paginationContainer.appendChild(pageButton);
-    }
-}
-
-function changePage(page) {
-    currentPage = page;
-    showPage(currentPage);
-}
-
-// Mặc định hiển thị trang đầu tiên khi trang web được tải
-window.onload = function () {
-    showPage(currentPage);
+// add To cart
+ function addToCart(){
+    alert('Sản phẩm đã được thêm vào giỏ hàng!');
+ };
+// xác nhận đặt hàng
+function checkOutOrder(){
+    alert('Khách hàng đã đặt hàng thành công!');
 };
->>>>>>> 8637778 (init project)

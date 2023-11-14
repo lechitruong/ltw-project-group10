@@ -35,10 +35,37 @@
 }
 
 .rating {
-    color: #FFD700;
-    font-size: 24px;
+    font-size: 0;
+    margin-top: 5px;
+    direction: rtl; /* Đảo ngược thứ tự hiển thị từ phải sang trái */
+    unicode-bidi: bidi-override; /* Đảm bảo văn bản hiển thị đúng hướng */
 }
 
+.rating span {
+    font-size: 20px;
+    color: #fdd835;
+    margin-right: 5px;
+}
+
+.star-label {
+    font-size: 24px;
+    color: #ddd;
+    cursor: pointer;   
+    direction: ltr; /* Đảo ngược thứ tự hiển thị từ trái sang phải */
+    unicode-bidi: bidi-override; /* Đảm bảo văn bản hiển thị đúng hướng */
+}
+
+.star:checked + .star-label,
+.star:hover + .star-label,
+.star:checked ~ .star-label,
+.star:hover ~ .star-label {
+    color: #fdd835; /* Màu sắc khi được chọn (vàng) */
+}
+
+.star {
+    position: absolute;
+    opacity: 0;
+}
 .review {
     font-style: italic;
     color: #555;
@@ -74,35 +101,35 @@
 }
 .comment-list {
     width: 1020px;
-    margin: 20px 0 20px 30px ;
-    border: 1px solid #333;
-    max-height: 300px; 
-    overflow-y: auto; 
+    margin: 20px 0 20px 30px;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    max-height: 300px;
+    overflow-y: auto;
 }
+
 .comment {
     display: flex;
     flex-direction: column;
-    margin-bottom: 20px;
+    margin: 20px;
+    text-align: left;
 }
-.comment-info {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    margin: 5px;
-}
-.comment-info img {
-    width: 50px;
-    height: 50px;
-    border-radius: 50%;
-    margin-right: 10px;
-    object-fit: cover;
-}
-
 .comment-info h3,
 .comment-info .timestamp {
     margin: 0;
 }
-
 .comment-text {
     margin-top: 5px;
+}
+
+.comment button {
+    display: inline-block;
+    margin-top: 10px;
+    width: 70px;
+    height: 30px;
+    background-color: red;
+    cursor: pointer;
+}
+
+.comment button:hover {
+    opacity: 0.7;
 }

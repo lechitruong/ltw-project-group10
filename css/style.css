@@ -1,29 +1,17 @@
-<<<<<<< HEAD
-=======
   /* Css chung */
->>>>>>> 8637778 (init project)
+  @import url('https://fonts.googleapis.com/css?family=Poppins:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i|Rubik:300,300i,400,400i,500,500i,700,700i,900,900i');
   * {
         padding: 0px;
         margin: 0px;
         /*  font-size: 1.1vw; */
     }
-    
     body {
         color: #000000;
-<<<<<<< HEAD
-        font-family: Arial, Helvetica, sans-serif;
-        background-image: url(/image/icon/background-header.jpg);
-        background-attachment: fixed;
-    }
-    
-=======
-        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-        /* font-family: "Gilroy", Arial, Helvetica, sans-serif; */
-        background-image: url(/image/icon/background-header.jpg);
+        font-family: 'Rubik', sans-serif !important;
+        background-image: url(/image/icon/background-header.jpg); 
         background-attachment: fixed;
         font-size: 16px;
     }
->>>>>>> 8637778 (init project)
     .col30 {
         width: 30%;
     }
@@ -47,12 +35,6 @@
     h1 {
         text-transform: uppercase !important;
         padding: 5px !important;
-<<<<<<< HEAD
-    }
-    
-    h1 {
-=======
->>>>>>> 8637778 (init project)
         color: #ffffff;
         background-color: #ff0000;
         padding: 10px;
@@ -62,10 +44,6 @@
     h2 {
         padding: 5px;
         border-bottom: 2px solid #ffa500;
-<<<<<<< HEAD
-        text-transform: uppercase;
-    }
-=======
         border-width: 100%;
         text-transform: uppercase;
     }
@@ -74,7 +52,6 @@
         font-size: 20px;
         transform: translateY(10px);
     }
->>>>>>> 8637778 (init project)
     
     a {
         transition-duration: 0.5s;
@@ -103,21 +80,6 @@
     .ds-none{
         display: none;
     }
-<<<<<<< HEAD
-    /* Product */
-.product{
-    position: fixed;
-    width: 960px;
-    top: 64px;
-    bottom: 20px;
-    margin: auto 0;
-    background-color: white; /* Màu nền của giao diện */
-    padding: 20px;
-    display: none;
-    z-index: 100;
-    margin-top: 0;
-  }
-=======
     .tieude{
         position: relative;
     }
@@ -342,6 +304,32 @@
         right:-50px;
         top:50%;
       }
+      /* loc san pham */
+      .dropdown-menu {
+        display: none;
+        position: absolute;
+        background-color: #f9f9f9;
+        box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+        z-index: 10;
+        left: 0;
+        right: 0;
+        margin-top: -5px;
+      }
+  
+      .dropdown-menu a {
+        padding: 10px 14px;
+        display: block;
+        text-decoration: none;
+        color: #333;
+      }
+  
+      .dropdown:hover .dropdown-menu {
+        display: block;
+       
+      }
+      .dropdown-item:hover{
+        background-color: red !important;
+      }
       /* Css product */
       .product{
         position: fixed;
@@ -390,7 +378,7 @@
     background-color: currentColor;
     color:red;
     left: 50px;
-    top: 138px;
+    top: 153px;
     width: 60px;
     height: 54px;
     text-align: center;
@@ -587,7 +575,6 @@
             color: white;
         }
 /* lop phu khi hover vao info-dog */
->>>>>>> 8637778 (init project)
   .overlay__product{
     position: absolute;
     top: 0;
@@ -598,15 +585,6 @@
     overflow: hidden;
     transition: background-color 0.3s; /* Thời gian chuyển đổi */
 }
-<<<<<<< HEAD
-.info-dog:hover .overlay__product {
-    background-color: rgba(255, 255, 255, 0.4); /* Màu nền khi hover */ /* Độ mờ khi hover */
-    overflow: visible;
-    animation: slide-up 0.1s ease-in;
-    z-index: 1;
-  }
-=======
->>>>>>> 8637778 (init project)
   .overlay__product--button{
     border-radius: 50%;
     width: 50px;
@@ -614,189 +592,23 @@
     display: none;
     background-color: white;
   }
-<<<<<<< HEAD
-.overlay__product--watch {
-    position: absolute;
-    top: 40%;
-    left: 30%;
-=======
   .overlay__product--button:hover{
-    background-color: #de8ebe;
+    background-color: red;
   }
 .overlay__product--watch {
     position: absolute;
     top: 40%;
     left: 20%;
->>>>>>> 8637778 (init project)
   }
 .overlay__product--add {
     position: absolute;
     top: 40%;
-<<<<<<< HEAD
-    right: 30%;
-=======
     right: 20%;
->>>>>>> 8637778 (init project)
   }
   .info-dog:hover 
   .overlay__product--button {
     display: block;
   }
-<<<<<<< HEAD
-  @keyframes slide-up {
-    0% {
-      transform: translateY(10%);
-    }
-    100% {
-      transform: translateY(0);
-    }
-  }
-  
-  .product--close{
-    position: absolute;
-    right:10px;
-    top: 0;
-    color: black;
-    font-size: 24px;  
-    cursor: pointer;
-}
-  .product__title{
-    margin: 20px 30px;
-  }
-  .product-container {
-      padding: 0 20px;
-      justify-content: center;
-      align-items: center;
-      display: flex;
-      z-index: 2;
-    }
-    .grid-2{
-      max-width: 50%;
-    }
-    .home-product-item__sale-off{
-position: absolute;
-background-color: currentColor;
-color:red;
-left: 40px;
-top: 152px;
-width: 60px;
-height: 48px;
-text-align: center;
-}
-.home-product-item__sale-off::after{
-    content: "";
-    position: absolute;
-    top:100%;
-    right: 0;
-    border-width: 0 30px 8px;
-    border-style: solid;
-    border-color: transparent currentColor;
-}
-.home-product-item__sale-off--percent{
-font-size: 1.3rem;
-color: white;
-font-weight: 600;
-display: block;
-margin: 3px 0;
-line-height: 1.3rem;
-}
-.home-product-item__sale-off--label{
-    font-size: 1.3rem;
-    color: white;
-    font-weight: 600;
-    line-height: 1.3rem;
-
-}
-    .grid-2 img{
-      width: 100%;
-    }
-    .product-information{
-      margin-left: 20px;
-    }
-    .product-name {
-      font-size: 30px;
-      color: red;
-      margin-top: 10px;
-    }
-    .product__money{
-      display: flex;
-      align-items: center;
-      height: 50px;
-    }
-    .product__money--old{
-      opacity: 0.5;
-      color: red;
-      font-size: 20px;
-      margin-right: 10px;
-      text-decoration: line-through;
-    }
-    .product__money--new{
-      color: red;
-      font-size: 30px;
-    }
-    .product__describe{
-      margin: 10px;
-    }
-    .product__describe p{
-      font-size: 20px;
-    }
-    .product__promotion{
-      padding: 10px;
-      border-radius: 5px;
-      border: 1px solid #333;
-      margin-bottom: 10px;
-      width: 100%;
-    }
-    .product__promotion .product__promotion--title{
-        background-color: none;
-        width: 100%;
-    }
-    .cart{
-      display: flex;
-    }
-    .quanlity{
-      display: flex;
-      margin-right: 10px;
-    }
-    .quanlity .button{
-      border: 1px solid #ddd !important;
-      border-radius: 0;
-      height:42px;
-      line-height: 18px;
-      background: #ddd; 
-      margin: 0;
-      cursor: pointer;
-      font-size: 18px;
-      text-align: center;
-    }
-    .quanlity.button:hover{
-      background: #888;
-    }
-    .quanlity .input-text{
-      text-align: center;
-      outline: none;
-      border: 1px solid #ddd;
-      font-size: 14px;
-      margin: 0;
-      height: 42px;
-    }
-    
-    .addCartButton{
-      background: #EB2525;
-      cursor: pointer;
-      padding: 10px;
-      width: 200px;
-      font-weight: 700;
-      font-size: 14px;
-      color: white;
-      outline: none;
-      border: none;
-    }
-    .addCartButton:hover{
-        opacity: 0.7;
-    }
-=======
->>>>>>> 8637778 (init project)
     /*CSS NAV*/
     
     nav {
@@ -880,11 +692,8 @@ line-height: 1.3rem;
         display: block;
         font-weight: bold;
     }
-<<<<<<< HEAD
-=======
     /* phan nut bam de hien thi san pham tung trang */
 
->>>>>>> 8637778 (init project)
     /* CSS BACK TO TOP */
     
     .back-to-top {
@@ -941,14 +750,9 @@ line-height: 1.3rem;
         position: fixed;
         left: 33vw;
         top: 12vw;
-<<<<<<< HEAD
-        z-index: 100;
-        border-radius: 10px;
-=======
         z-index: 5;
         border-radius: 10px;
         display: none;
->>>>>>> 8637778 (init project)
     }
     
     input,
@@ -959,12 +763,8 @@ line-height: 1.3rem;
     input[type="button"] {
         padding: 5px;
         border-radius: 5px;
-<<<<<<< HEAD
-        background-color: #15dfe6;
-=======
         outline: none;
         border: none;
->>>>>>> 8637778 (init project)
     }
     
     input[type="text"] {
@@ -1004,13 +804,6 @@ line-height: 1.3rem;
     }
     
     .footer h6 {
-<<<<<<< HEAD
-        text-align: center;
-    }
-    
-    footer a {
-        color: #ffa500;
-=======
         margin-bottom: 15px;
         text-align: left;
     }
@@ -1021,7 +814,6 @@ line-height: 1.3rem;
         color: #ffa500;
         list-style: none;
         padding: 2px 0;
->>>>>>> 8637778 (init project)
     }
     
     footer a:hover {
@@ -1093,17 +885,12 @@ line-height: 1.3rem;
             width: 100%;
         }
         .list-dog{
-            font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif !important;
+            /* font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif !important; */
         }
         .form-support {
             left: 0px;
         }
-<<<<<<< HEAD
-        .col10 img,
-        .main div>h4 {
-=======
         .col10 img{
->>>>>>> 8637778 (init project)
             width: 70%;
         }
         .col40 a {

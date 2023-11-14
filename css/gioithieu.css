@@ -18,7 +18,42 @@
     padding: 10px;
     text-align: justify;
 }
+.main h3{
+    font-size: 20px;
+    margin-top: 5px;
+}
+.main-team{
+    position: relative;
+    width: 100%;
+}
+.main-team-text{
+    bottom: 100px;
+    position: absolute;
+    text-align: center;
+    color: white;
+}
+.main-team-text span{
+    font-size: 40px;
+}
+.main-team-text p{
+    font-size: 20px;
+}
+.main-team-bg{
+    width: 100%;
+}
+.main-team-bg img{
+    margin-top: 10px;
+    width: 100%;
+}
 
+.main-work{
+    margin-top: 10px;
+    display: flex;
+}
+.main-work p{
+    font-size: 18px;
+
+}
 .list {
     list-style-type: none;
 }
@@ -28,20 +63,30 @@
     color: #ffa500;
 }
 
+.list li{
+    margin-top: 5px;
+}
+li p {
+    color: black;
+}
+
 ul.list-child {
-    list-style-type: disc;
+    list-style-type: disc;    
 }
 
 ul.list-child,
 ol.list-child {
     padding-left: 50px;
+    margin-top: 15px;
+}
+.list-child li {
+    font-size: 16px;
+    line-height: 20px;
 }
 
 h3.thank {
     text-align: center;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-<<<<<<< HEAD
-=======
 }
 /* gioi thieu thanh vien */
 .list-title{
@@ -128,5 +173,18 @@ color: #de8ebe ;
 .our-team-custom-profile i{
     margin-right: 5px;
     color: white;
->>>>>>> 8637778 (init project)
+}
+/* truyen thong */
+.flex-box{
+    display: flex;
+    justify-content: space-between;
+    margin:20px auto;
+    height: 60px;
+}
+.flex-box .flex-box-item{
+width: 16%;
+margin-right: 10px;
+}
+.flex-box .flex-box-item a img{
+    width: 100%;
 }
